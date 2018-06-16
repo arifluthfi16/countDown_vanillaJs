@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<nav>
+
+</nav>
+
+<body class="text-center">
+        <div class="cover-container d-flex mx-auto px-3 pt-3 pb-1 h-100 flex-column ">
+            <header class="mb-auto masthead">
+                <h1 class="display-4">Countdown Timer</h1>
+            </header>
+            
+            <main id="display" role="main" class="cover">
+                <!-- This will display the counter -->
+                <div id="countDown" display="inline">
+                    <h1 id="hourCount"></h1>
+                    <h1 id="minCount"></h1>
+                    <h1 id="secCount"></h1>
+                </div>
+
+
+                <div id="timeInput">
+                    <form class="form-group" id="form">
+                        <div class="row w-50 mx-auto">
+                            <div class="col-4">
+                                <input type="number" id="hour" name="hour" class="form-control" placeholder="Hour">
+                            </div>
+                            <div class="col-4">
+                                <input type="number" id="minute" class="form-control" placeholder="Minute"> 
+                            </div>
+                            <div class="col-4">
+                                <input type="number" id="second" class="form-control" placeholder="Second"> 
+                            </div>
+                        </div>
+                            <div class="col-xs-12" style="height:15px;"></div><!-- ADD SPACING  -->
+                                <input type="button" class="btn btn-light btn-lg" onclick="proses()" value="Start Timer">
+                    </form>
+                </div>
+
+            </main>
+</body>
+            <footer class="mt-auto align-item-end">
+                <div class="lead">
+                    <p>A simple countdown timer by @Me</p>
+                </div>
+                <script src="js/source.js"></script>
+                
+            </footer>
+        </div>
+
+
+</html>
